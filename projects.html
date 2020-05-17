@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html amp>
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <link rel="shortcut icon" href="assets/images/society-128x128.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="">
+
+    <title>Muhokian Projects
+    </title>
+
+    <link rel="canonical" href="projects.html">
+    
+
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <script async custom-element="amp-position-observer" src="https://cdn.ampproject.org/v0/amp-position-observer-0.1.js"></script>
+    <script async custom-element="amp-lightbox" src="https://cdn.ampproject.org/v0/amp-lightbox-0.1.js"></script>
+    <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+    <script async custom-element="amp-animation" src="https://cdn.ampproject.org/v0/amp-animation-0.1.js"></script>
+    <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
+    <script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script>
+
+
+
+</head>
+
+<body>
+    <div id="top-page"></div>
+    <amp-animation id="showScrollToTopAnim" layout="nodisplay">
+        <script type="application/json">
+            {
+                "duration": "200ms",
+                "fill": "both",
+                "iterations": "1",
+                "direction": "alternate",
+                "animations": [{
+                    "selector": "#scrollToTopButton",
+                    "keyframes": [{
+                        "opacity": "0.4",
+                        "visibility": "visible"
+                    }]
+                }]
+            }
+        </script>
+    </amp-animation>
+    <amp-animation id="hideScrollToTopAnim" layout="nodisplay">
+        <script type="application/json">
+            {
+                "duration": "200ms",
+                "fill": "both",
+                "iterations": "1",
+                "direction": "alternate",
+                "animations": [{
+                    "selector": "#scrollToTopButton",
+                    "keyframes": [{
+                        "opacity": "0",
+                        "visibility": "hidden"
+                    }]
+                }]
+            }
+        </script>
+    </amp-animation>
+    <div id="scrollToTopMarker">
+        <amp-position-observer on="enter:hideScrollToTopAnim.start; exit:showScrollToTopAnim.start" layout="nodisplay"> </amp-position-observer>
+    </div>
+    <amp-sidebar id="sidebar" class="cid-rOKsxGZWfv" layout="nodisplay" side="left">
+        <div class="builder-sidebar" id="builder-sidebar">
+            <button on="tap:sidebar.close" class="close-sidebar">
+			<span></span>
+			<span></span>
+			</button>
+
+
+            <!-- NAVBAR ITEMS -->
+            <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true">
+                <li class="nav-item dropdown">
+                    <a class="nav-link mbr-bold link mbr-white text-danger dropdown-toggle display-7" data-toggle="dropdown-submenu" aria-expanded="true">Muhokian</a>
+                    <div class="dropdown-menu"><a class="mbr-bold mbr-white text-danger dropdown-item display-7" href="the_muhokian.html">The Muhokian</a><a class="mbr-bold mbr-white text-danger dropdown-item display-7" href="registration.html" aria-expanded="false">Join</a></div>
+                </li>
+                <li class="nav-item"><a class="nav-link mbr-bold link mbr-white text-danger display-7" href="gallery.html">Gallery</a></li>
+                <li class="nav-item">
+                    <a class="nav-link mbr-bold link mbr-white text-danger display-7" href="upcoming.html">Upcoming</a>
+                </li>
+                <li class="nav-item"><a class="nav-link mbr-bold link mbr-white text-danger display-7" href="community.html">Community</a></li>
+                <li class="nav-item">
+                    <a class="nav-link mbr-bold link mbr-white text-danger display-7" href="news.html#menu1-a">News</a>
+                </li>
+            </ul>
+            <!-- NAVBAR ITEMS END -->
+            <!-- SOCIAL ICON -->
+            <div class="menu-social-list">
+
+
+
+
+
+
+                <a href="https://twitter.com/muhoko_org" target="_blank" class="iconfont-wrapper">
+                    <span class="amp-iconfont animation-normal fa-twitter fa"><svg width="20" height="20" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><path d="M1684 408q-67 98-162 167 1 14 1 42 0 130-38 259.5t-115.5 248.5-184.5 210.5-258 146-323 54.5q-271 0-496-145 35 4 78 4 225 0 401-138-105-2-188-64.5t-114-159.5q33 5 61 5 43 0 85-11-112-23-185.5-111.5t-73.5-205.5v-4q68 38 146 41-66-44-105-115t-39-154q0-88 44-163 121 149 294.5 238.5t371.5 99.5q-8-38-8-74 0-134 94.5-228.5t228.5-94.5q140 0 236 102 109-21 205-78-37 115-142 178 93-10 186-50z"></path></svg></span>
+                </a>
+                <a href="https://www.facebook.com/muhoko.org/" target="_blank" class="iconfont-wrapper">
+                    <span class="amp-iconfont animation-normal fa-facebook fa"><svg width="20" height="20" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><path d="M1343 12v264h-157q-86 0-116 36t-30 108v189h293l-39 296h-254v759h-306v-759h-255v-296h255v-218q0-186 104-288.5t277-102.5q147 0 228 12z"></path></svg></span>
+                </a>
+                <a href="https://www.instagram.com/muhoko_org/" target="_blank" class="iconfont-wrapper">
+                    <span class="amp-iconfont animation-normal fa-instagram fa"><svg width="20" height="20" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><path d="M1152 896q0-106-75-181t-181-75-181 75-75 181 75 181 181 75 181-75 75-181zm138 0q0 164-115 279t-279 115-279-115-115-279 115-279 279-115 279 115 115 279zm108-410q0 38-27 65t-65 27-65-27-27-65 27-65 65-27 65 27 27 65zm-502-220q-7 0-76.5-.5t-105.5 0-96.5 3-103 10-71.5 18.5q-50 20-88 58t-58 88q-11 29-18.5 71.5t-10 103-3 96.5 0 105.5.5 76.5-.5 76.5 0 105.5 3 96.5 10 103 18.5 71.5q20 50 58 88t88 58q29 11 71.5 18.5t103 10 96.5 3 105.5 0 76.5-.5 76.5.5 105.5 0 96.5-3 103-10 71.5-18.5q50-20 88-58t58-88q11-29 18.5-71.5t10-103 3-96.5 0-105.5-.5-76.5.5-76.5 0-105.5-3-96.5-10-103-18.5-71.5q-20-50-58-88t-88-58q-29-11-71.5-18.5t-103-10-96.5-3-105.5 0-76.5.5zm768 630q0 229-5 317-10 208-124 322t-322 124q-88 5-317 5t-317-5q-208-10-322-124t-124-322q-5-88-5-317t5-317q10-208 124-322t322-124q88-5 317-5t317 5q208 10 322 124t124 322q5 88 5 317z"></path></svg></span>
+                </a>
+                <a href="https://www.linkedin.com/in/muhoko-org-1437a2176" target="_blank" class="iconfont-wrapper">
+                    <span class="amp-iconfont animation-normal fa-linkedin fa"><svg width="20" height="20" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><path d="M477 625v991h-330v-991h330zm21-306q1 73-50.5 122t-135.5 49h-2q-82 0-132-49t-50-122q0-74 51.5-122.5t134.5-48.5 133 48.5 51 122.5zm1166 729v568h-329v-530q0-105-40.5-164.5t-126.5-59.5q-63 0-105.5 34.5t-63.5 85.5q-11 30-11 81v553h-329q2-399 2-647t-1-296l-1-48h329v144h-2q20-32 41-56t56.5-52 87-43.5 114.5-15.5q171 0 275 113.5t104 332.5z"></path></svg></span>
+                </a>
+            </div>
+            <!-- SOCIAL ICON END -->
+            <!-- SHOW BUTTON -->
+            <div class="navbar-buttons mbr-section-btn"><a class="btn btn-md mbr-bold btn-danger-outline display-7" href="registration.html" target="_blank"><span class="fa fa-joomla mbr-iconfont mbr-iconfont-btn"><svg width="16" height="16" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><path d="M1198 1073l-160 160-151 152-30 30q-65 64-151.5 87t-171.5 2q-16 70-72 115t-129 45q-85 0-145-60.5t-60-145.5q0-72 44.5-128t113.5-72q-22-86 1-173t88-152l12-12 151 152-11 11q-37 37-37 89t37 90q37 37 89 37t89-37l30-30 151-152 161-160zm-341-682l12 12-152 152-12-12q-37-37-89-37t-89 37-37 89.5 37 89.5l29 29 152 152 160 160-151 152-161-160-151-152-30-30q-68-67-90-159.5t5-179.5q-70-15-115-71t-45-129q0-85 60-145.5t145-60.5q76 0 133.5 49t69.5 123q84-20 169.5 3.5t149.5 87.5zm807 1067q0 85-60 145.5t-145 60.5q-74 0-131-47t-71-118q-86 28-179.5 6t-161.5-90l-11-12 151-152 12 12q37 37 89 37t89-37 37-89-37-89l-30-30-152-152-160-160 152-152 160 160 152 152 29 30q64 64 87.5 150.5t2.5 171.5q76 11 126.5 68.5t50.5 134.5zm-2-1124q0 77-51 135t-127 69q26 85 3 176.5t-90 158.5l-12 12-151-152 12-12q37-37 37-89t-37-89-89-37-89 37l-30 30-152 152-160 160-152-152 161-160 152-152 29-30q67-67 159-89.5t178 3.5q11-75 68.5-126t135.5-51q85 0 145 60.5t60 145.5z"></path></svg></span>Become a muhokiAN</a></div>
+            <!-- SHOW BUTTON END -->
+        </div>
+    </amp-sidebar>
+    <section class="menu1 menu horizontal-menu cid-rOKsxGZWfv" id="menu1-a">
+
+        <!-- <div class="menu-wrapper"> -->
+        <nav class="navbar navbar-dropdown navbar-expand-lg navbar-fixed-top">
+            <div class="menu-container container-fluid">
+                <!-- SHOW LOGO -->
+                <div class="navbar-brand">
+                    <div class="navbar-logo">
+                        <amp-img src="assets/images/society-alt-116x116.png" layout="responsive" height="57" width="57" alt="image" class="mobirise-loader">
+                            <div placeholder="" class="placeholder">
+                                <div class="mobirise-spinner">
+                                    <em></em>
+                                    <em></em>
+                                    <em></em>
+                                </div>
+                            </div>
+                            <a href="index.html#menu1-1"></a>
+                        </amp-img>
+                    </div>
+                    <span class="navbar-caption-wrap mbr-white"><a class="navbar-caption mbr-bold mbr-white text-danger display-5" href="index.html#menu1-1">Muhoko. Society</a></span>
+                </div>
+                <!-- SHOW LOGO END -->
+                <!-- COLLAPSED MENU -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                    <!-- NAVBAR ITEMS -->
+                    <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link mbr-bold link mbr-white text-danger dropdown-toggle display-7" data-toggle="dropdown-submenu" aria-expanded="true">Muhokian</a>
+                            <div class="dropdown-menu"><a class="mbr-bold mbr-white text-danger dropdown-item display-7" href="the_muhokian.html">The Muhokian</a><a class="mbr-bold mbr-white text-danger dropdown-item display-7" href="registration.html" aria-expanded="false">Join</a></div>
+                        </li>
+                        <li class="nav-item"><a class="nav-link mbr-bold link mbr-white text-danger display-7" href="gallery.html">Gallery</a></li>
+                        <li class="nav-item">
+                            <a class="nav-link mbr-bold link mbr-white text-danger display-7" href="upcoming.html">Upcoming</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link mbr-bold link mbr-white text-danger display-7" href="community.html">Community</a></li>
+                        <li class="nav-item">
+                            <a class="nav-link mbr-bold link mbr-white text-danger display-7" href="news.html#menu1-a">News</a>
+                        </li>
+                    </ul>
+                    <!-- NAVBAR ITEMS END -->
+                    <!-- SOCIAL ICON -->
+                    <div class="menu-social-list">
+
+
+
+
+
+
+                        <a href="https://twitter.com/muhoko_org" target="_blank" class="iconfont-wrapper">
+                            <span class="amp-iconfont animation-normal fa-twitter fa"><svg width="20" height="20" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><path d="M1684 408q-67 98-162 167 1 14 1 42 0 130-38 259.5t-115.5 248.5-184.5 210.5-258 146-323 54.5q-271 0-496-145 35 4 78 4 225 0 401-138-105-2-188-64.5t-114-159.5q33 5 61 5 43 0 85-11-112-23-185.5-111.5t-73.5-205.5v-4q68 38 146 41-66-44-105-115t-39-154q0-88 44-163 121 149 294.5 238.5t371.5 99.5q-8-38-8-74 0-134 94.5-228.5t228.5-94.5q140 0 236 102 109-21 205-78-37 115-142 178 93-10 186-50z"></path></svg></span>
+                        </a>
+                        <a href="https://www.facebook.com/muhoko.org/" target="_blank" class="iconfont-wrapper">
+                            <span class="amp-iconfont animation-normal fa-facebook fa"><svg width="20" height="20" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><path d="M1343 12v264h-157q-86 0-116 36t-30 108v189h293l-39 296h-254v759h-306v-759h-255v-296h255v-218q0-186 104-288.5t277-102.5q147 0 228 12z"></path></svg></span>
+                        </a>
+                        <a href="https://www.instagram.com/muhoko_org/" target="_blank" class="iconfont-wrapper">
+                            <span class="amp-iconfont animation-normal fa-instagram fa"><svg width="20" height="20" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><path d="M1152 896q0-106-75-181t-181-75-181 75-75 181 75 181 181 75 181-75 75-181zm138 0q0 164-115 279t-279 115-279-115-115-279 115-279 279-115 279 115 115 279zm108-410q0 38-27 65t-65 27-65-27-27-65 27-65 65-27 65 27 27 65zm-502-220q-7 0-76.5-.5t-105.5 0-96.5 3-103 10-71.5 18.5q-50 20-88 58t-58 88q-11 29-18.5 71.5t-10 103-3 96.5 0 105.5.5 76.5-.5 76.5 0 105.5 3 96.5 10 103 18.5 71.5q20 50 58 88t88 58q29 11 71.5 18.5t103 10 96.5 3 105.5 0 76.5-.5 76.5.5 105.5 0 96.5-3 103-10 71.5-18.5q50-20 88-58t58-88q11-29 18.5-71.5t10-103 3-96.5 0-105.5-.5-76.5.5-76.5 0-105.5-3-96.5-10-103-18.5-71.5q-20-50-58-88t-88-58q-29-11-71.5-18.5t-103-10-96.5-3-105.5 0-76.5.5zm768 630q0 229-5 317-10 208-124 322t-322 124q-88 5-317 5t-317-5q-208-10-322-124t-124-322q-5-88-5-317t5-317q10-208 124-322t322-124q88-5 317-5t317 5q208 10 322 124t124 322q5 88 5 317z"></path></svg></span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/muhoko-org-1437a2176" target="_blank" class="iconfont-wrapper">
+                            <span class="amp-iconfont animation-normal fa-linkedin fa"><svg width="20" height="20" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><path d="M477 625v991h-330v-991h330zm21-306q1 73-50.5 122t-135.5 49h-2q-82 0-132-49t-50-122q0-74 51.5-122.5t134.5-48.5 133 48.5 51 122.5zm1166 729v568h-329v-530q0-105-40.5-164.5t-126.5-59.5q-63 0-105.5 34.5t-63.5 85.5q-11 30-11 81v553h-329q2-399 2-647t-1-296l-1-48h329v144h-2q20-32 41-56t56.5-52 87-43.5 114.5-15.5q171 0 275 113.5t104 332.5z"></path></svg></span>
+                        </a>
+                    </div>
+                    <!-- SOCIAL ICON END -->
+                    <!-- SHOW BUTTON -->
+                    <div class="navbar-buttons mbr-section-btn"><a class="btn btn-md mbr-bold btn-danger-outline display-7" href="registration.html" target="_blank"><span class="fa fa-joomla mbr-iconfont mbr-iconfont-btn"><svg width="16" height="16" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><path d="M1198 1073l-160 160-151 152-30 30q-65 64-151.5 87t-171.5 2q-16 70-72 115t-129 45q-85 0-145-60.5t-60-145.5q0-72 44.5-128t113.5-72q-22-86 1-173t88-152l12-12 151 152-11 11q-37 37-37 89t37 90q37 37 89 37t89-37l30-30 151-152 161-160zm-341-682l12 12-152 152-12-12q-37-37-89-37t-89 37-37 89.5 37 89.5l29 29 152 152 160 160-151 152-161-160-151-152-30-30q-68-67-90-159.5t5-179.5q-70-15-115-71t-45-129q0-85 60-145.5t145-60.5q76 0 133.5 49t69.5 123q84-20 169.5 3.5t149.5 87.5zm807 1067q0 85-60 145.5t-145 60.5q-74 0-131-47t-71-118q-86 28-179.5 6t-161.5-90l-11-12 151-152 12 12q37 37 89 37t89-37 37-89-37-89l-30-30-152-152-160-160 152-152 160 160 152 152 29 30q64 64 87.5 150.5t2.5 171.5q76 11 126.5 68.5t50.5 134.5zm-2-1124q0 77-51 135t-127 69q26 85 3 176.5t-90 158.5l-12 12-151-152 12-12q37-37 37-89t-37-89-89-37-89 37l-30 30-152 152-160 160-152-152 161-160 152-152 29-30q67-67 159-89.5t178 3.5q11-75 68.5-126t135.5-51q85 0 145 60.5t60 145.5z"></path></svg></span>Become a muhokiAN</a></div>
+                    <!-- SHOW BUTTON END -->
+                </div>
+                <!-- COLLAPSED MENU END -->
+
+                <button on="tap:sidebar.toggle" class="ampstart-btn hamburger">
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
+            </div>
+        </nav>
+        <!-- AMP plug -->
+
+        <!-- </div> -->
+    </section>
+
+
+
+    <section class="features1 cid-rOKJt0Kexn" id="features1-f">
+
+
+
+        <div class="container">
+            <div class="title mbr-pb-5 mbr-white align-center">
+                <h3 class="mbr-section-title mbr-fonts-style mbr-pb-3 display-2">Muhokian Projects</h3>
+
+            </div>
+            <div class="mbr-row mbr-jc-c mbr-column">
+                <div class="card mbr-col-sm-12 md-pb lg-pb">
+                    <div class="card-wrapper mbr-flex mbr-row-reverse">
+                        <div class="card-img mbr-flex mbr-col-md-12 mbr-col-lg-6">
+                            <amp-img src="assets/images/Hovermarket" layout="responsive" width="642.0353130016051" height="361" alt="image" class="mobirise-loader">
+                                <div placeholder="" class="placeholder">
+                                    <div class="mobirise-spinner">
+                                        <em></em>
+                                        <em></em>
+                                        <em></em>
+                                    </div>
+                                </div>
+
+                            </amp-img>
+                        </div>
+                        <div class="card-box mbr-m-auto mbr-white mbr-pb-3 mbr-pt-3 mbr-px-4">
+                            <h3 class="card-title mbr-fonts-style display-5">Hackathon</h3>
+                            <h4 class="card-subtitle mbr-pt-3 mbr-fonts-style display-4"><span style="font-weight: normal;">Developers at Muhoko Take 3rd Place</span></h4>
+                            <p class="card-text mbr-fonts-style mbr-pt-2 display-7">
+                                <br>
+                            </br>
+                                
+                            The Developers at Muhoko Had Taken Part in the 2020 Covid-19 Hackathon And Placed 3rd,winning a cash prize of N$15 000.00.
+                        They had developed an e-commerce website called HoverMarket.This website would serve as a platform for informal vendors to sell their products and 
+                    for taxi drivers to act as delivery guys to earn an extra few dollars as a side hustle.</p>
+                         
+                        </div>
+                    </div>
+                </div>
+                <div class="card mbr-col-sm-12 md-pb lg-pb">
+                    <div class="card-wrapper mbr-flex">
+                        <div class="card-img mbr-flex mbr-col-md-12 mbr-col-lg-6">
+                            <amp-img src="assets/images/web.jpg" layout="responsive" width="642.3198198198198" height="361" alt="image" class="mobirise-loader">
+                                <div placeholder="" class="placeholder">
+                                    <div class="mobirise-spinner">
+                                        <em></em>
+                                        <em></em>
+                                        <em></em>
+                                    </div>
+                                </div>
+
+                            </amp-img>
+                        </div>
+                        <div class="card-box mbr-m-auto mbr-white mbr-pb-3 mbr-pt-3 mbr-px-4">
+                            <h3 class="card-title mbr-fonts-style display-5">Web Development</h3>
+                            <h4 class="card-subtitle mbr-pt-3 mbr-fonts-style display-4"><span style="font-weight: normal;">Muhokian Web Developers</span></h4>
+                            <p class="card-text mbr-fonts-style mbr-pt-2 display-7">
+                                <br>
+                            
+                                The Web Developers at Muhoko strive to deliver only the best websites to their clients.
+                            They have already developed sites for many others and are still in the process of delivering to current and future clients.
+                            <br>
+                        
+                        Junior Muhokians also gain the advantage of being trained by the seniors so that the development circle keeps on growing within Namibia.</p>
+                        
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mbr-row mbr-jc-c mbr-column">
+                    <div class="card mbr-col-sm-12 md-pb lg-pb">
+                        <div class="card-wrapper mbr-flex mbr-row-reverse">
+                            <div class="card-img mbr-flex mbr-col-md-12 mbr-col-lg-6">
+                                <amp-img src="assets/images/software.jpg" layout="responsive" width="642.0353130016051" height="361" alt="image" class="mobirise-loader">
+                                    <div placeholder="" class="placeholder">
+                                        <div class="mobirise-spinner">
+                                            <em></em>
+                                            <em></em>
+                                            <em></em>
+                                        </div>
+                                    </div>
+
+                                </amp-img>
+                            </div>
+                            <div class="card-box mbr-m-auto mbr-white mbr-pb-3 mbr-pt-3 mbr-px-4">
+                                <h3 class="card-title mbr-fonts-style display-5">Program Development</h3>
+                                <h4 class="card-subtitle mbr-pt-3 mbr-fonts-style display-4"><span style="font-weight: normal;">Software Team</span></h4>
+                                <p class="card-text mbr-fonts-style mbr-pt-2 display-7">
+                                    <br>
+                                The Software Developers are still in the process of coming up with software applications to automate and to bring ease to the lives of everyone using these applications.
+                                
+                                </p>
+                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mbr-col-sm-12 md-pb lg-pb">
+                        <div class="card-wrapper mbr-flex">
+                            <div class="card-img mbr-flex mbr-col-md-12 mbr-col-lg-6">
+                                <amp-img src="assets/images/game.png" layout="responsive" width="642.3198198198198" height="361" alt="image" class="mobirise-loader">
+                                    <div placeholder="" class="placeholder">
+                                        <div class="mobirise-spinner">
+                                            <em></em>
+                                            <em></em>
+                                            <em></em>
+                                        </div>
+                                    </div>
+
+                                </amp-img>
+                            </div>
+                            <div class="card-box mbr-m-auto mbr-white mbr-pb-3 mbr-pt-3 mbr-px-4">
+                                <h3 class="card-title mbr-fonts-style display-5">Game Development</h3>
+                                <h4 class="card-subtitle mbr-pt-3 mbr-fonts-style display-4"><span style="font-weight: normal;">Muhokian Roots</span></h4>
+                                <p class="card-text mbr-fonts-style mbr-pt-2 display-7">
+                                    <br>
+                                    It has been 3 years since the Muhoko Runner game was developed and the Developers at Muhoko have been In the process of developing a new game.
+                                    Claiming It to be better than the last.Hopefully with the junior Muhokians' presence a pool of brilliant and creative ideas will form and breathe new life into the development environment. 
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+            </div>
+    </section>
+
+    <section class="content2 cid-rOKJfHd2Cn" id="content2-e">
+
+
+        <div class="container">
+            <div class="mbr-row">
+                <div class="image mbr-col-sm-12 mbr-col-md-12 mbr-pb-2 mbr-col-lg-9">
+                    <amp-img src="assets/images/screen4.jpg" layout="responsive" width="790.8089097303634" height="527" alt="image" class="mobirise-loader">
+                        <div placeholder="" class="placeholder">
+                            <div class="mobirise-spinner">
+                                <em></em>
+                                <em></em>
+                                <em></em>
+                            </div>
+                        </div>
+
+                    </amp-img>
+                </div>
+                <div class="text-wrap mbr-col-sm-12 mbr-col-md-12 mbr-col-lg-3">
+                    <h3 class="mbr-fonts-style mbr-bold mbr-white mbr-pb-4 art-title display-5">Executive Board of Muhoko</h3>
+                    <p class="mbr-text mbr-white mbr-fonts-style display-4">The new Board has been elected for the year 2020 and we are excited to see what the have in store for Muhoko<br>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer2 cid-rPvzeju5Ny" id="footer2-1d">
+
+
+        <div class="container">
+            <div class="mbr-row">
+                <div class="mbr-col-sm-12 mbr-col-md-12 mbr-col-lg-5 mbr-flex mbr-jc-c">
+                    <div class="image-wrapper">
+                        <amp-img src="assets/images/society-alt-400x399.png" layout="responsive" width="200.50125313283206" height="200" alt="logo" class="mobirise-loader">
+                            <div placeholder="" class="placeholder">
+                                <div class="mobirise-spinner">
+                                    <em></em>
+                                    <em></em>
+                                    <em></em>
+                                </div>
+                            </div>
+                            <a href="index.html"></a>
+                        </amp-img>
+                    </div>
+                </div>
+                <div class="mbr-col-sm-12 mbr-col-md-12 mbr-col-lg-7">
+                    <div class="links-box mbr-pb-5">
+                        <div class="links-list mbr-flex mbr-jc-e">
+
+
+
+
+
+
+
+                            <a class="mbr-fonts-style custom-text mbr-white mbr-bold links-text display-4" href="index.html">Home</a>
+                            <a class="mbr-fonts-style custom-text mbr-white mbr-bold links-text display-4" href="gallery.html">GALLERY</a>
+                            <a class="mbr-fonts-style custom-text mbr-white mbr-bold links-text display-4" href="news.html">NEWS</a>
+                            <a class="mbr-fonts-style custom-text mbr-white mbr-bold links-text display-4" href="community.html">Community</a>
+                        </div>
+                    </div>
+                    <div class="text-box">
+                        <p class="mbr-fonts-style mbr-white footer-text display-4">“Be who you are and say what you feel, because those who mind don't matter and those who matter don't mind”<br>
+<br>Dream.Build.Play</p>
+                    </div>
+                    <div class="social-box mbr-pt-5">
+                        <div>
+
+
+
+
+                            <a href="https://twitter.com/muhoko_org" class="iconfont-wrapper" target="_blank">
+                                <span class="amp-iconfont animation-normal fa-twitter fa"><svg width="24" height="24" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><path d="M1684 408q-67 98-162 167 1 14 1 42 0 130-38 259.5t-115.5 248.5-184.5 210.5-258 146-323 54.5q-271 0-496-145 35 4 78 4 225 0 401-138-105-2-188-64.5t-114-159.5q33 5 61 5 43 0 85-11-112-23-185.5-111.5t-73.5-205.5v-4q68 38 146 41-66-44-105-115t-39-154q0-88 44-163 121 149 294.5 238.5t371.5 99.5q-8-38-8-74 0-134 94.5-228.5t228.5-94.5q140 0 236 102 109-21 205-78-37 115-142 178 93-10 186-50z"></path></svg></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mbr-row custom-box">
+                <div class="copy-box mbr-flex mbr-jc-b mbr-pt-5">
+                    <p class="mbr-fonts-style mbr-white copy-text display-4">© 2020 MUHOKO</p>
+                    <p class="mbr-fonts-style mbr-white copy-text display-4">All Rights Reserved</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <button id="scrollToTopButton" on="tap:top-page.scrollTo(duration=200)">                                         <a class="scroll-to-top-arrow"></a>                                     </button></body>
+
+</html>
