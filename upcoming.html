@@ -446,16 +446,18 @@
 
 <!--Script To Pull News Data From API-->
 <script>
-    const api_url = "http://newsapi.org/v2/top-headlines?country=us&category=technology&apiKey=f858cd3220014396a5690e69fc3ff356";
+    const api_url = "http://newsapi.org/v2/top-headlines?country=us&category=technology&apiKey=bcdac234fb5d4b028e14041ba2601030";
+
+    // Using A CORS Proxy To Get Around “No Access-Control-Allow-Origin header” Error
+    const proxyurl = "https://cors-anywhere.herokuapp.com/";
+
     async function getData() {
-        const response = await fetch(api_url);
+        const response = await fetch(proxyurl + api_url);
         const data = await response.json();
         const article = [];
 
         for (let i = 0; i < data.articles.length; i++) {
-            if (data.articles[i].title.length >= 60 && data.articles[i].title.length >= 55) {
-                article.push(data.articles[i]);
-            }
+            article.push(data.articles[i]);
         }
 
         article.sort(function(a, b){
